@@ -1,0 +1,4 @@
+Need To update this to use the JUCE state system
+Right now there is a bug where when you change types and go to another plugin you lose your type when coming back
+This was fixed with the slider valies but that is because they are handled in the processor and not the editor
+There is also a bug where the second slider cant seem to be set to a value over 10
