@@ -26,7 +26,10 @@ ZmidiAudioProcessorEditor::ZmidiAudioProcessorEditor (ZmidiAudioProcessor& p)
     c2 = juce::Colour(2, 195, 154);
     c3 = juce::Colour(242, 27, 63);
     c4 = juce::Colour(240, 243, 189);
-    getLookAndFeel().setDefaultSansSerifTypefaceName("Tahoma");
+    juce::StringArray AvailableFonts = juce::Font::findAllTypefaceNames();
+    if (AvailableFonts.contains("Tahoma")) {
+        getLookAndFeel().setDefaultSansSerifTypefaceName("Tahoma");
+    }
     getLookAndFeel().setColour(juce::Slider::textBoxTextColourId, c2);
     getLookAndFeel().setColour(juce::Slider::textBoxOutlineColourId, bg);
     getLookAndFeel().setColour(juce::Slider::textBoxBackgroundColourId, bg2);
