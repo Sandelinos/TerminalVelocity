@@ -119,7 +119,7 @@ void ZmidiAudioProcessorEditor::paint(juce::Graphics& g)
     path.closeSubPath();
     g.fillPath(path);*/
     if (audioProcessor.notesOn>0) {
-        g.setColour(c2);
+        g.setColour(c3);
     }
     else {
         g.setColour(bg2);
